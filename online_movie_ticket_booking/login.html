@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Login page</title>
+<!-------------javascript sources and CSS sources--------------------------->
+<link href="styles/login.css" rel="stylesheet" type="text/css" />
+<script src="scripts/menu.js"></script>
+<script src="scripts/login.js"></script>
+<!----------------------------------------------------------------------->
+</head>
+<body>
+<center>
+	
+			<tr>
+				<td colspan="4" height="200" >
+				<img id="img" src="images/menu/logo.jpg" alt="Logo">
+			 
+                </td>
+			</tr>
+			
+<div>
+<nav>
+					<ul class="menu">
+						<li><B><a href="index.html">Home</a></B></li>
+						<li><B><a href="ticketbooking.html">Ticket booking</a></B></li>
+						<li><B><a href="snacks.html">Snacks</a></B></li>
+						<li><B><a href="contact.html">Contact Us</a></B></li>
+					</ul>
+				</nav>
+                </div>	
+				
+				<td>
+				<tr>
+				  <center><font color="white" size="4em"><u><h3>Login To Your Account</h3></u></font></center>
+				</td>
+			   </tr>
+			   
+			   <tr>
+                <font color="white" size="4em">
+				<form id="form_id" method="post" name="myform"><br><br>
+				<label>User Name : <input type="text" name="username" id="username"/></label><br>
+				<label>Password : <input type="password" name="password" id="password"/><br></label>
+				 <input type="button" value="Login" id="submit" onclick="validate()"/>
+				<font color="red" size="4.5em"><label id="error"></label></font> 
+				</form>
+			    
+			</tr>
+			
+		
+</center>
+
+</body>
+</html>
