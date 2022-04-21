@@ -27,18 +27,6 @@ body {
                 </td>
 			</tr>
 			
-			<!-------------->
-			<!--menu-->
-			 <!-- <div>
-             <nav>
-					<ul class="menu">
-						<li><B><a href="index.html">Home</a></B></li>
-						<li><B><a href="ticketbooking.html">Ticket booking</a></B></li>
-						<li><B><a href="snacks.html">Snacks</a></B></li>
-						<li><B><a href="contact.html">Contact Us</a></B></li>
-					</ul>
-				</nav>
-                </div> -->
 
                 <?php include("./header.php");  ?>
 				
@@ -47,111 +35,67 @@ body {
 			<!--container--->
             <tr>
                 <td colspan="4" height="60">
-				<center><font color="white" size="4em"><h2><u>Regestration Form</u></h2></font></center>
+				<center style= "margin-top: 40px;"><font color="#608594" size="4em"><h2>Regestration Form</h2></font></center>
 				</td>
             </tr>
+            
 			<tr>
 				 
-				<table border="0">
+				<table border="0" style = "background: steelblue; width: 50%; border-radius: 10px; padding-top: 25px;padding-bottom: 20px;">
+					<tbody style="text-align: right" >
 				<tr>
 				<form name='registration' id="regForm" action="../controllers/backend/register.php" method="post" onSubmit="return formValidation();">  
 				<td width="200"  height="20">
 					<font color="white"><label for="userid">NID no.:</label>
 				</td>
-				<td><input type="text" name="NID" id="nids" size="30" /></td>
-				<td id="usererror" width="250"></td>
+				<td><input type="text" name="NID" id="nids" size="30" style="height:26px; border-radius:1px" /></td>
+				<td id="usererror" width="250" style="width: 200; height: 35px"></td>
 				</tr>
 				<tr>
 				<td height="30">
 					<font color="white"><label for="username">Name:</label>
 				</td>
-				<td><input type="text" name="Name" id="names" size="30" /></td>
-				<td id="nameerror"height="20"></td>
+				<td><input type="text" name="Name" id="names" size="30" style="height:26px; border-radius:1px" /></td>
+				<td id="nameerror"height="20" style="height: 35px;"></td>
 				</tr>
 				<tr>
 				<td  height="30">
 					<font color="white"><label for="passid">Password:</label>
 				</td>
-				<td><input type="password" name="Password" id="pass" size="30" /></td>
-				<td id="passworderror"height="20"></td>
+				<td><input type="password" name="Password" id="pass" size="30" style="height:26px; border-radius:1px" /></td>
+				<td id="passworderror"height="20" style="height: 35px;"></td>
 				</tr>
 				
 				<tr>
 				<td  height="30">
 					<font color="white"><label for="address">Address:</label>
 				</td>
-				<td><input type="text"  class="addresses" id="addresses" name="Address" size="30" /></td>
-				<td id="addresserror"height="20"></td>
+				<td><input type="text"  class="addresses" id="addresses" name="Address" size="30" style="height:26px; border-radius:1px" /></td>
+				<td id="addresserror"height="20" style="height: 35px;"></td>
 				</tr>
-				<!--<tr>
-				<td height="30">
-					<font color="white"><label for="country">Country:</label>
-				</td>
-				<td><select name="country"> 
-					<option selected="" value="Default">(Please select a country)</option>  
-					<option value="BN">Bangladesh</option>
-					<option value="BU">Bhutan</option> 
-					<option value="IN">India</option>  
-					<option value="IS">Indonesia</option>
-					<option value="JP">Japan</option>
-					<option value="MA">Malaysia</option> 
-					<option value="MY">Myanmar</option> 
-					<option value="NP">Nepal</option>  
-					<option value="PK">Pakistan</option>  
-					<option value="SI">Singapore</option>   
-					<option value="SR">Sri Lanka</option>  
-					 
-					  
-					</select></td>
-				<td id="countryerror"height="20"></td>
-				</tr>
-				<tr>
-				<td>
-					<font color="white"><label for="zip">ZIP Code:</label>
-				</td>
-				<td><input type="text" name="zip" /></td>
-				<td id="zipcodeerror"height="20"></td>
-				</tr> -->
+			
 				<tr>
 				<td>
 					<font color="white"><label for="email">Email:</label></font>
 				</td>
-				<td><input type="text" name="Email" class="emails" id="emails" size="30" /></td>
-				<td id="emailerror"height="20"></td>
+				<td><input type="text" name="Email" class="emails" id="emails" size="30" style="height:26px; border-radius:1px"/></td>
+				<td id="emailerror"height="20" style="height: 35px;"></td>
 				</tr>
-				<!--<tr>
-				<td>
-					<font color="white"><label id="gender">Sex:</label>
-				</td>
-				<td>
-					<font color="white"><input type="checkbox" name="msex" value="Male" /><span>Male</span>
-					<input type="checkbox" name="fsex" value="Female" /><span>Female</span></font>
-				</td>
-				<td id="sexerror"height="20"></td>
-				</tr>
-				 
-				<tr>
-				<td height="60">
-					<font color="white"><label for="desc">About:</label>
-				</td>
-				<td><textarea name="desc" id="desc" onkeyup="clear_symbol()" onkeydown="clear_symbol()"></textarea></td>
-				<td id="abouterror"height="20"></td>
-				</tr> -->
+				
 				<tr>
 				<td></td>
 				<td>
 					<!-- <form action="./login.html" method="post"> -->
-						<input type="submit" name="submit" value="Submit" />
-					<input type="button" name="resets" value="Reset" onclick="resetForms()" />
+					<input type="submit" name="submit" value="Submit" style="height: 40px; padding: 10px 10px; background: #608594; border-radius: 7px; outline: none; border: 1px solid white; color: white; margin-top: 10px; cursor: pointer;margin-right: 10px;"/>
+					<input type="button" name="resets" value="Reset" onclick="resetForms()" style="height: 40px; padding: 10px 10px; background: #608594; border-radius: 7px; outline: none; border: 1px solid white; color: white; margin-top: 10px; cursor: pointer;"/>
 					<!-- <a href="#" onclick="hello()">Hello</a> -->
 				
 				<!-- </form> --> 
 				</td>
 				</tr>
 				</form>
-				<!-- <a href="#" onclick="hello()">Hello</a> -->
-
-				</tr>
+				
+				</tr>  </tbody>
 			</table>
 		</td>
 	</table>
@@ -170,10 +114,7 @@ body {
 					
 				}
 
-				// function hello(){
-				// 	alert("Hello");
-				// 	document.getElementById('emails').value('');
-				// }
+				
 				</script>
 
 </body>

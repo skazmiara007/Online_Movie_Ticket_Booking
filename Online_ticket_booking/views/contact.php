@@ -13,10 +13,45 @@ body {
     background-image: url("images/menu/S.jpg");
     background-size: cover;
 }
+
+
+.forms{
+	clear:both;
+    list-style-type: none;
+    margin-left:auto;
+	margin-right:120px;
+    padding: 11x 20px;
+    overflow: hidden;
+    background-color: silver;
+	width:150px;
+	opacity: 0.7;
+	border-radius:7px;
+}
+
+.forms li  a{
+    float:left;
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 4px 7px;
+    text-decoration: none;
+}
 </style> 
     
 </head>
 <body>
+
+<nav>
+<ul class="forms">
+	<?php if(isset($_SESSION['flag'])!='ok'){?>
+<li><B><a href="login.php">Login</a></B></li>
+<li><B><a href="registration.php">Register</a></B></li> <?php }?> 
+
+<?php if(isset($_SESSION['flag'])=='ok'){?>
+<li><B><a href="../controllers/backend/LogOut.php">Logout</a></B></li>  <?php }?> 
+</ul>
+</nav>
+
 
 	 <center>
 			<tr>

@@ -73,7 +73,7 @@
         <li>Director :  Anthony Russo, Joe Russo</li>
         <li>Genere : Action, Adventure, Superhero, Science fiction, Fantasy</li>
 		<li>Time : 10:00 am<script></script></li>
-        <input type="button" value="Book" onClick="window.location='ticketbooking.php';">
+        
 		</ul>
 </div>
 </div>
@@ -86,10 +86,12 @@
         <li>Director :  Justin Lin</li>
         <li>Genere : Action/Adventure</li>
 		<li>Time : 1:00pm<script></script></li>
-        <input type="button" value="Book" onClick="window.location='ticketbooking.php';">
+        
 		 </ul>
 </div>
 </div>
+
+
 
 <div class="mySlides">
   <img src="images/poster/father.jpg" height="450" width="170%">
@@ -99,7 +101,7 @@
         <li>Director :  Florian Zeller</li>
         <li>Genere : Dramae</li>
 		<li>Time : 4:00<script></script></li>
-        <input type="button" value="Book" onClick="window.location='ticketbooking.php';">
+        
 		</ul>
 </div>
 </div>
@@ -144,17 +146,19 @@
 		<tr>
 		<td colspan="4" height="130"></td>
 		</tr>
-            </table>    
+            </table> 
+<input type="button" style="margin-top:-50px; margin-bottom:20px" value="Book a movie" onClick="window.location='ticketbooking.php';">   
 			</td>
 			 </tr>
 			<!--end of container-->
 			<!--FOOTER-->
+
 			<tr>
 				<td colspan="4" height="20">
 				</td>
 			</tr>
 		</table>
-		<table border="0" cellspacing="0" cellpadding="0" width="960px" height="100" bgcolor="grey">
+		<table border="0" cellspacing="0" cellpadding="0" width="960px" height="100" bgcolor="grey" style="margin-top:50px">
 		<tr>
 		<td>
 		<center>

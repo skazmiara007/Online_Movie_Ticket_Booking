@@ -6,7 +6,7 @@ function printPrice() {
 							  var total = 0;
 							  var sentence = "";
 							  var price = document.getElementById('Ctickets').value * Cquantity;
-							  sentence+="<font color='red' size='4'><b>"+"<br>Movie Name: "+movie+"</b></font>";
+							  sentence+="<font color='purple' size='4'><b>"+"<br>Movie Name: "+movie+"</b></font>";
 							  sentence += "<br><font color='white' size='4'>"+"Name: "+name + "<br>Child Tickets : "+Cquantity+ " for Tk/= "+ price+"</font>";
 							  total += price;
 
@@ -16,7 +16,7 @@ function printPrice() {
 							  sentence += "<br>";
 							  sentence += "<font color='white' size='4'>"+'Total cost: Tk/='+total+"</font>";
 							  sentence += "<br>";
-							  sentence += "<a href='checkout.php?price="+total+"'>"+'Total cost: Tk/='+total+"</a>";
+							  // sentence += "<a href='checkout.php?price="+total+"'>"+'Total cost: Tk/='+total+"</a>";
 							  document.getElementById("inserts").innerHTML=sentence;
 }
 
